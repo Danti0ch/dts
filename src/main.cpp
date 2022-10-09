@@ -44,6 +44,24 @@ bool test2(){
 }
 //----------------------------------------------------------------------------------------//
 
+bool test3(){
+    dts::vector<int> vec(10);
+
+    for(uint n_elem = 0; n_elem < 12; n_elem++){
+        vec.push_back(n_elem + 1);
+    }
+
+    dts::vector<int> vec2 = vec;
+
+    for(uint n_elem = 0; n_elem < vec2.size(); n_elem++){
+        std::cout << vec2.pop_back() << " ";
+    }
+    std::cout << "\n";
+
+    return true;
+}
+//----------------------------------------------------------------------------------------//
+
 int main(){
     
     test2();
